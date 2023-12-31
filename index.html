@@ -41,8 +41,16 @@
           </ul>
           <form class="d-flex" role="search">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
+            <button id="searchInput" class="btn btn-outline-success" oninput="filterList()" type="submit">Search</button>
           </form>
+          <!-- List of items -->
+          <ul id="itemList">
+              <li>Item 1</li>
+              <li>Item 2</li>
+              <li>Item 3</li>
+              <li>Another Item</li>
+              <!-- Add more items as needed -->
+          </ul>
         </div>
       </div>
     </nav>
@@ -112,6 +120,6 @@
   });
 </script>
 
-    <script src="/js/config.js"></script>
+    <script src="/config/searchFilter.js"></script>
   </body>
 </html>
